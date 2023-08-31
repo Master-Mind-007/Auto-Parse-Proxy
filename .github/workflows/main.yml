@@ -23,16 +23,13 @@ jobs:
           
       - name: Pull files
         run: |
-          git config --local user.email "murongpig@foxmail.com"
-          git config --local user.name "MuRongPIG"
+          git config --local user.email "mastermind@moviescomplex.live"
+          git config --local user.name "Master-Mind-007"
           git pull origin main
       
       - name: Get proxies
         run: python getproxy.py
 
-      - name: Check Proxies
-        run: python checkproxy.py
-        
       - name: Commit files
         run: |
           git add -A
