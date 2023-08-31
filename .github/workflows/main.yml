@@ -1,4 +1,4 @@
-name: Cron Proxxy
+name: Cron Fetch Proxies
 
 on:
   schedule:
