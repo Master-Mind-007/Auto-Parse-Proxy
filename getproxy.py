@@ -185,7 +185,10 @@ class Downloadproxies():
     def save(self):
         for type in ['socks4','socks5','http']:
             self.proxy_dict[type] = list(set(self.proxy_dict[type]))
-            self.out_file = './{}.txt'.format(type)
+            if type == 'http':
+                self.out_file = './https.txt'
+            else:
+                self.out_file = './{}.txt'.format(type)
             f = open(self.out_file,'w')
             for i in self.proxy_dict[type]:
                 if '#' in i or i == '\n':
