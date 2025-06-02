@@ -6,7 +6,7 @@ import platform
 
 def test(type):
     if type in ['http', 'https']:
-        with open("http.txt", "r") as f:
+        with open("https.txt", "r") as f:
             data = f.read().split("\n")
     else:
         with open("{}.txt".format(type), "r") as f:
